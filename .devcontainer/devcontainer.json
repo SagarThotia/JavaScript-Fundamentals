@@ -1,0 +1,53 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+
+	"name": "Node.js",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+	
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"PKief.material-icon-theme",
+				"afractal.node-essentials",
+				"christian-kohler.path-intellisense",
+				"esbenp.prettier-vscode",
+				"xabikos.JavaScriptSnippets",
+				"ms-vscode.js-debug-nightly",
+				"Zignd.html-css-class-completion",
+				"oderwat.indent-rainbow",
+				"solnurkarim.html-to-css-autocompletion",
+				"ecmel.vscode-html-css",
+				"AndersEAndersen.html-class-suggestions",
+				"dbaeumer.vscode-eslint",
+				"mikestead.dotenv",
+				"AESSoft.aessoft-class-autocomplete",
+				"BracketPairColorDLW.bracket-pair-color-dlw",
+				"mgmcdermott.vscode-language-babel",
+				"formulahendry.auto-rename-tag",
+				"formulahendry.auto-complete-tag",
+				"formulahendry.auto-close-tag",
+				"kevinkyang.auto-comment-blocks",
+				"WallabyJs.quokka-vscode"
+			],
+			"settings": {
+				"editor.fontSize": 12,
+				"terminal.integrated.fontSize": 14,
+				"editor.wordWrap": "on"
+			}
+		}
+	}
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
