@@ -15,8 +15,16 @@ console.log(null >= 0); // null greater than is zero
 
 console.log();
 console.log(undefined > 0);
-console.log(undefined == 0);
+console.log(undefined == 0); 
 console.log(undefined >= 0);
+
+console.log(2 == 3); // It check only values
+
+// ===
+
+console.log();
+console.log("2" === 2); // It check both types and values
+console.log(2 === 2); 
 
 
 // The reason is that an equality check == and comparisons > < >= <= work differently 
