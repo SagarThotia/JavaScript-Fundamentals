@@ -33,3 +33,27 @@ let myObj = {
     name :"Sagar",
     age:22,
 }
+
+const myFunction = function(){
+    console.log("Hello World");
+}
+
+console.log(typeof myFunction); // Object Function
+
+/*
+    // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+    Type of val                       Output     
+
+    Undefined                       "undefined"    
+    Null                            "object"
+    Boolean                         "boolean" 
+    Number                          "number"
+    String                          "string"
+    Object                          "object"        
+    Object function                 "function"
+    Object (host and                Implementation-defined except  
+    does not implement              may not be "undefined", "boolean",    
+    [[Call]])                       "number", or "string".
+*/
+

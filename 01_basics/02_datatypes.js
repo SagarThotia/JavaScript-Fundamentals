@@ -14,7 +14,7 @@ let isLoggedIn = false;
 let state;
 
 // number => 2 to power 53
-// bigint => // It will use in StockMarket, Trading, Reddit, Facebook. Scientific values 
+// bigint => // It will use in StockMarket, Trading, Reddit, Facebook and for Scientific values 
 // string => ""
 // boolean => true/false
 // null => standalone value
