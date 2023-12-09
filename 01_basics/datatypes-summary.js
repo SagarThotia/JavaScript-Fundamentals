@@ -41,9 +41,9 @@ const myFunction = function(){
 console.log(typeof myFunction); // Object Function
 
 /*
-    // https://262.ecma-international.org/5.1/#sec-11.4.3
+// https://262.ecma-international.org/5.1/#sec-11.4.3
 
-    Type of val                       Output     
+Type of val                       Output     
 
     Undefined                       "undefined"    
     Null                            "object"
@@ -58,6 +58,7 @@ console.log(typeof myFunction); // Object Function
 */
 
 /******************************Memory******************************************** */
+https://excalidraw.com/#json=dBnqtHg36QKpimLqvr1Su,J0fUJIPPlrKyOHxqTPzlmA
 
 // Primitive -> we get a copy of the value // we will do change in copy not in original value
 // Non-Primitive -> we get a reference of  // We will do change in original value or actual value;  
