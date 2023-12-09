@@ -57,3 +57,31 @@ console.log(typeof myFunction); // Object Function
     [[Call]])                       "number", or "string".
 */
 
+/******************************Memory******************************************** */
+
+// Primitive -> we get a copy of the value // we will do change in copy not in original value
+// Non-Primitive -> we get a reference of  // We will do change in original value or actual value;  
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename =  "codesum.com";
+
+let anothername = myYoutubename;
+anothername = "codestack";
+
+console.log(myYoutubename);
+console.log(anothername);
+
+// Advanced datatype
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "abc@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
