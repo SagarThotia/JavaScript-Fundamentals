@@ -1,3 +1,40 @@
+/*
+    1. String:
+    
+    This is a sequence of text known as string, To signify that the 
+    value is a string, enclose it in single or double quotes marks.
+
+    let myVariable = 'Sam-com'; or
+    let myVariable = "Sam-com";
+
+    2. Number 
+
+    This is a number. Numbers don't have quotes around them 
+
+    let myVariable = 25;
+
+    3. Boolean
+
+    This is a true/false value. The words true and false are 
+    special keywords that don't need quote marks.
+
+    let myVariable = true;
+
+    4. Array
+
+    This is a structure that allows you to store multiple values in a single reference
+
+    let myVariable = ['Sam', 'com', 25];
+
+    5. Objects
+
+    This can be anything. Everything in JavaScript is an object and can be 
+    stored in a variable. keep this in mind as you learn
+
+    let myVariable = document.querySelector('h1');
+
+*/
+
 // # Primitive datatypes
 
 // callbyValue copy reference value it can be changes in copy 
