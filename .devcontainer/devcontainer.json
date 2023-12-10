@@ -39,10 +39,12 @@
 				"formulahendry.auto-complete-tag",
 				"formulahendry.auto-close-tag",
 				"kevinkyang.auto-comment-blocks",
-				"WallabyJs.quokka-vscode"
+				"WallabyJs.quokka-vscode",
+				"formulahendry.code-runner",
+				"thedavej.night-owl-black"
 			],
 			"settings": {
-				"editor.fontSize": 16,
+				"editor.fontSize": 14,
 				"terminal.integrated.fontSize": 14,
 				"editor.wordWrap": "on"
 			}
