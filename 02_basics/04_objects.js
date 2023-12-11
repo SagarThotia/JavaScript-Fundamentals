@@ -87,11 +87,11 @@ navbar(company ="sagar");
 
 // JSON API
 
-{
-    "name": "sagar",
-    "coursename": "Solidity",
-    "price": "free"
-}
+// {
+//     "name": "sagar",
+//     "coursename": "Solidity",
+//     "price": "free"
+// }
 
 
 [
