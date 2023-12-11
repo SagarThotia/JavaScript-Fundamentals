@@ -55,3 +55,48 @@ console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser)); // rarely used properties
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+
+/***************************************Objects Destructuring******************************************/
+
+const course ={
+    coursename: "js in hindi",
+    price: 999,
+    courseInstructor: "sagar" 
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course;
+const {courseInstructor: instructor} = course;
+
+console.log(courseInstructor);
+console.log(instructor);
+
+
+// Reacts Portion understanding
+
+// Destructor part in reacts
+
+const navbar = ({company}) =>{
+
+}
+
+navbar(company ="sagar");
+
+// JSON API
+
+{
+    "name": "sagar",
+    "coursename": "Solidity",
+    "price": "free"
+}
+
+
+[
+  {},
+  {},
+  {}
+]
+

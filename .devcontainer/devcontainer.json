@@ -43,7 +43,8 @@
 				"formulahendry.code-runner",
 				"thedavej.night-owl-black",
 				"ms-vscode.live-server",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"ClemensPeters.format-json"
 			],
 			"settings": {
 				"editor.fontSize": 14,
