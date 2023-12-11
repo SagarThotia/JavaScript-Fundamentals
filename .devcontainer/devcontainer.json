@@ -41,7 +41,9 @@
 				"kevinkyang.auto-comment-blocks",
 				"WallabyJs.quokka-vscode",
 				"formulahendry.code-runner",
-				"thedavej.night-owl-black"
+				"thedavej.night-owl-black",
+				"ms-vscode.live-server",
+				"ritwickdey.LiveServer"
 			],
 			"settings": {
 				"editor.fontSize": 14,
