@@ -8,10 +8,11 @@ function sayMyName()
     console.log("R");
 }
 
+// sayMyName; // Function Reference
 // sayMyName();
 
 // Way:1
-                        // (Parameters, arguments)
+                        //  (Parameters)
 // function  addTwoNumbers(number1, number2)
 // {
 //     console.log(number1 + number2);
@@ -34,7 +35,7 @@ addTwoNumbers(5,2); // 7
 addTwoNumbers(5,"2"); // 52
 addTwoNumbers(5,"a"); // 5a
 addTwoNumbers(5, null); // 5
-        // (Parameters, arguments)
+        // (arguments)
 
 
 // most interesting doubt and interview quesions for beginner        
