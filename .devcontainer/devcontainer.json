@@ -44,7 +44,8 @@
 				"thedavej.night-owl-black",
 				"ms-vscode.live-server",
 				"ritwickdey.LiveServer",
-				"ClemensPeters.format-json"
+				"ClemensPeters.format-json",
+				"adpyke.codesnap"
 			],
 			"settings": {
 				"editor.fontSize": 14,
