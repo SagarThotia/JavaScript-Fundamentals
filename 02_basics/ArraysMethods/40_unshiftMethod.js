@@ -1,6 +1,7 @@
 /***********************************Array.prototype.unshift()***********************************/
 /*
-    The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array.
+    The unshift() method of Array instances adds the specified elements to the beginning of an array 
+    and returns the new length of the array.
 
     Syntax:
     unshift()

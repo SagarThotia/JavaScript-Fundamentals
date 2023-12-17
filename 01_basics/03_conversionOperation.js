@@ -26,8 +26,8 @@ console.log(booleanIsLoggedIn);
 let someNumber = 33;
 
 let stringNumber = String(someNumber);
-console.log(stringNumber);
-console.log(typeof stringNumber);
+console.log(stringNumber); // 33
+console.log(typeof stringNumber); // string
 
 
 // ******************************************* Operations *********************************************
@@ -35,14 +35,14 @@ console.log(typeof stringNumber);
 
 let value = 3;
 let negValue = -value;
-console.log(negValue);
+console.log(negValue); // -3
 
-console.log(2+2);
-console.log(2-2);
-console.log(2*2);
-console.log(2**3); // power of number  
-console.log(2/2);
-console.log(2%2); // modulus most use in cryptography 
+console.log(2+2); // 4
+console.log(2-2); // 0
+console.log(2*2); // 4
+console.log(2**3); // 8 // power of number  
+console.log(2/2); // 1
+console.log(2%2); // 0 // modulus most use in cryptography 
 
 
 let str1 = "hello";

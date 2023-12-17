@@ -7,6 +7,11 @@
 //         break;
 // }
 
+
+/*
+    Switch performs an ‘===’ based comparison, i.e both the value of the expression and its datatype is compared.
+*/
+
 const month = 3
 
 switch (month) {
