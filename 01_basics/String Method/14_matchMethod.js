@@ -1,7 +1,8 @@
 /***********************************String.prototype.match()*************************************/
 /*
     The match() method of String values retrieves the result of matching this string against a regular expression.
-
+    It returns true if the string contains the given string value otherwise it returns false 
+    
     Syntax:
     match(regexp)
 */
@@ -14,6 +15,9 @@ const found = paragraph.match(regex);
 console.log(found);
 // Expected output: Array ["T", "I"]
 
+const strSum = new String("Jargon Software");
+let strToString = str.toString();
+console.log(strToString); // Jargon Software
 
 
 

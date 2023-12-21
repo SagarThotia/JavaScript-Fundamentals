@@ -44,3 +44,5 @@ firstLang.outerHTML = '<li>TypeScript</li>';
 //remove
 const LastLang = document.querySelector('li:last-child');
 LastLang.remove();
+
+
