@@ -1,10 +1,10 @@
 # Project related to DOM
 
+[click](https://www.google.com)
 
 # Solution Code
 
-## Project 1
-
+## Project 1 Background ColorChanger
 
 ```javascript
 const buttons = document.querySelectorAll('.button');
@@ -33,9 +33,9 @@ buttons.forEach((button)=>{
 })
 ```
 
-### Project1 Background Changer  
 
-[Demo](https://www.07_Projects/1-ColorChanger/index.html)
+
+## Project 2 BMICalculator  
 
 ```javascript
 
