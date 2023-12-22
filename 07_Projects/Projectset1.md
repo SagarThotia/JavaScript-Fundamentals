@@ -32,10 +32,10 @@ buttons.forEach((button)=>{
     })
 })
 ```
-###Demo Project1 BackGround Changer
 
-[click here](http://127.0.0.1:3000/07_Projects/1-ColorChanger/index.html)
+### Project1 Background Changer  
 
+[Demo](https://www.07_Projects/1-ColorChanger/index.html)
 
 ```javascript
 
@@ -76,9 +76,6 @@ form.addEventListener('submit', (e)=>{
 })
 ```
 
-###Demo Project2 BMI Calculator
-
-[click here](http://127.0.0.1:3000/07_Projects/2-BMICalculator/index.html)
 
 
 
