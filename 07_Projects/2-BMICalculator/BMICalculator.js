@@ -29,7 +29,7 @@ form.addEventListener('submit', (e)=>{
         }else if(bmi > 18.6 && bmi <= 24.9){
             description('You are Fit', 'green');
         }else if(bmi > 24.9){
-            description('You are OverWeight', 'red')
+            description('You are OverWeight', 'red');
         }
     }
 })
