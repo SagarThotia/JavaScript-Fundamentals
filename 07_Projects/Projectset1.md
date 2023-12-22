@@ -33,9 +33,6 @@ buttons.forEach((button)=>{
 })
 ```
 
-#
-#
-#
 
 ## Project 2 BMICalculator  
 
