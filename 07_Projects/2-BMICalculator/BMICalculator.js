@@ -1,44 +1,3 @@
-# Project related to DOM
-
-
-# Solution Code
-
-## Project 1
-
-
-```javascript
-const buttons = document.querySelectorAll('.button');
-const body = document.querySelector('body');
-
-buttons.forEach((button)=>{
-    button.addEventListener('click', (e)=>{
-        console.log(e); // mouse event
-        console.log(e.target); // from where is coming
-        if(e.target.id === 'grey'){
-            body.style.backgroundColor = e.target.id;
-        }
-        if(e.target.id === 'white'){
-            body.style.backgroundColor = e.target.id;
-        }
-        if(e.target.id === 'blue'){
-            body.style.backgroundColor = e.target.id;
-        }
-        if(e.target.id === 'yellow'){
-            body.style.backgroundColor = e.target.id;
-        }
-        if(e.target.id === 'purple'){
-            body.style.backgroundColor = e.target.id;
-        }
-    })
-})
-```
-###Demo Project1 BackGround Changer
-
-[click here](http://127.0.0.1:3000/07_Projects/1-ColorChanger/index.html)
-
-
-```javascript
-
 const form = document.querySelector('form');
 // This usecase will give you empty value
 // const height = parseInt(document.querySelector('#height').value)
@@ -54,7 +13,7 @@ form.addEventListener('submit', (e)=>{
         results.innerHTML = `Please give a valid height ${height}`;
     } else if(weight === '' || weight < 0 || isNaN(weight)){
         results.innerHTML = `Please give a valid weight ${weight}`;
-    } else {
+    } else{
         const bmi = (weight / ((height*height)/10000)).toFixed(2);
         // show the result
         results.innerHTML = `<span>${bmi}</span>`
@@ -74,13 +33,3 @@ form.addEventListener('submit', (e)=>{
         }
     }
 })
-```
-
-###Demo Project2 BMI Calculator
-
-[click here](http://127.0.0.1:3000/07_Projects/2-BMICalculator/index.html)
-
-
-
-
-
