@@ -18,18 +18,18 @@ form.addEventListener('submit', (e)=>{
         // show the result
         results.innerHTML = `<span>${bmi}</span>`
 
-        function description(describe, color){
+        const health = (describe, color) => {
             const description = document.querySelector('#description');
             description.innerText = `${describe}`;
             description.style.color = `${color}`;
             description.append();
         }
         if(bmi <= 18.6 ){
-            description('You are underWeight', 'orange');
+            health('You are underWeight', 'orange');
         }else if(bmi > 18.6 && bmi <= 24.9){
-            description('You are Fit', 'green');
+            health('You are Fit', 'green');
         }else if(bmi > 24.9){
-            description('You are OverWeight', 'red');
+            health('You are OverWeight', 'red');
         }
     }
 })
