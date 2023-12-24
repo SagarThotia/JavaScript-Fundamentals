@@ -1,0 +1,84 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+} */
+
+
+#wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    height: 35rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#guess{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+
+.guessField{
+    position: relative;
+    width: 70%;
+    height: 5vh;
+    padding: 0.625rem, 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#guessField{
+    /* outline: none; */
+    outline-color: #a5f3fc;
+}
+
+
+.guessSubmit{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background: #1E90FF;
+    color: #fff;
+    width: 140px;
+    padding: 14px 8px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 1px #000000;
+}
+
+/* .guessSubmit{
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background: #0ea5e9;
+    transition: all 0.2s ease;
+    border:none;
+}
+
+
+.guessSubmit:active{
+    transform: scale(0.96);
+}   */
+
