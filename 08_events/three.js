@@ -26,3 +26,4 @@ function fun1(){
 function fun2(){
     clearInterval(stop);
 }
+

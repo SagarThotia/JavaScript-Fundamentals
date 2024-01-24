@@ -35,7 +35,7 @@ const changeText = function(){
 const sayName = setTimeout(saySagar, 2000) 
 const changeMe = setTimeout(changeText, 3000);
 
-document.querySelector('#stop').
+document.querySelector('#stop');
 addEventListener('click', function(){
     clearTimeout(changeMe);
     clearTimeout(sayName);
