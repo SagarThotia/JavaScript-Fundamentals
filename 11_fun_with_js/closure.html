@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure and Lexical scoping</title>
+</head>
+<body style=" background-color: #212121; color: whitesmoke; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <div>
+        <h1>Closure:</h1>
+        <p>
+            A closure is a combination of a function bundled together (enclosed)
+            with references to its surrounding state (the lexical environment). In
+            other words, a closure gives you access to an outer function's scope
+            from an inner function. In Javascript, closures are created every time a
+            function is created, at function creation time
+        </p>
+        <h3>
+            init() creates a local variable called name and a function called
+            displayName(). The displayName() function is an inner function that is
+            defined inside init() and is available only within the body of the
+            init() function. Note that the displayName() function has no local
+            variables of its own. However, since inner functions have access to the
+            variables of outer functions, displayName() can access the variable name
+            declared in the parent function, init().
+        </h3>
+    </div>
+
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    <script>
+      // function init() {
+      //     let name = "Mozilla"; // name is a local variable created by init
+      //     function displayName() {
+      //         // displayName() is the inner function, that forms the closure
+      //         console.log(name); // use variable declared in the parent function
+      //     }
+      //     displayName();
+      // }
+      // init();
+
+      // lexical scoping inner and outer function()
+            // function outer(){
+            //     let username = "sagar";
+            //     // console.log(secret);
+            //     function inner(){
+            //         let secret = "my123";
+            //         console.log("inner",username);
+            //     }
+            //     function innerTwo(){
+            //         console.log("innerTwo", username);
+            //         // console.log(secret);
+            //     }
+            //     inner();
+            //     innerTwo();
+            // }
+            // outer();
+            // console.log("TO OUTER", username);
+
+
+    // closure
+
+    // inner function have scope of outer access.
+    // When we return whole function it will return whole lexical scope. 
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName; // here in myFunc whole lexical scope in gone to the myFunc including 'name = mozilla';
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+    </script>
+
+    <script>
+        // real world example
+        // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`;
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`;
+            return function(){
+                document.body.style.backgroundColor = `${color}`;
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange");
+        document.getElementById('green').onclick = clickHandler("green");
+
+    </script>
+</body>
+</html>
