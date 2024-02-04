@@ -19,8 +19,11 @@ xhr.onreadystatechange = function () {
 
         data.forEach((repo) => {
             const li = document.createElement('i');
-            li.innerHTML = `<strong>${repo.name}</strong> - ${repo.description}`;
-            document.querySelector('#results').appenChild(li);
+            li.innerHTML = `<strong>${repo.name}</strong> - ${repo.description} <br>`;
+            document.querySelector('#results').appendChild(li);
         });
     }
-}
+};
+
+// send request
+xhr.send();
