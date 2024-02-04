@@ -1,0 +1,41 @@
+.container{
+    text-align: center;
+    margin-top: 20%;
+    padding-top: 20px;
+}
+
+#start{
+    background-color: green;
+    width: 100px;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 20px;
+    border: none;
+    outline-color: green;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+}
+
+#start:hover{
+    transform: scale(0.99);
+}
+
+#stop{
+    background-color: red;
+    width: 100px;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 20px;
+    border: none;
+    outline-color: red;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#stop:hover{
+    transform: scale(0.99);
+}

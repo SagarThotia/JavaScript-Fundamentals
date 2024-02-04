@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+</head>
+<body>
+    <div class="main">
+    </div>
+    <script>
+        const requestUrl = 'https://api.github.com/users/SagarThotia';
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+        xhr.onreadystatechange = function(){     
+            const data = JSON.parse(this.responseText);
+
+            const main = document.querySelector('.main');
+            console.log(main);
+
+            // create card
+            const card = document.createElement('div');
+            card.classList = 'card';
+            const movieCard = `
+                <img src="${data.avator_url}" alt="">
+                <div class="info">
+                    <span>follower: ${data.followers}</span>
+                </div>
+            `;
+
+            card.innerHTML += movieCard;
+            main.appendChild(card);
+        }
+        xhr.send();
+    </script>
+</body>
+</html>
