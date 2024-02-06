@@ -45,7 +45,8 @@
 				"ms-vscode.live-server",
 				"ritwickdey.LiveServer",
 				"ClemensPeters.format-json",
-				"adpyke.codesnap"
+				"adpyke.codesnap",
+				"neptunedesign.vs-html-to-css"
 			],
 			"settings": {
 				"editor.fontSize": 14,
