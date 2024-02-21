@@ -17,9 +17,32 @@ console.log(firstColor); // "red"
 console.log(secondColor); // "green"
 
 
+// const array = ['banana', 'orange', 'apple'];
+
+// const [firstfruit, , thirdFruit] = array;
+
+// console.log(firstfruit, thirdFruit); // banana apple
+
+
+
+// const array = ['banana', 'orange', 'apple',['pear', 'cashew']];
+
+// const [firstfruit, , thirdFruit, [fourthFruit, fifthFruit, sixthFruit]] = array;
+
+// console.log(firstfruit, thirdFruit, fourthFruit, fifthFruit, sixthFruit); // banana apple, pear, cashew undefined
+
+
+const array = ['banana', 'orange', 'apple'];
+
+const [firstfruit, , thirdFruit = 'cashew', fourthFruit = 'watermelon'] = array;
+
+console.log(firstfruit, thirdFruit, fourthFruit); // banana apple watermelon
+
+
+
 // Object Destructuring
 
-// Object destructuring allows you to extract properties from objects
+// Object destructuring allows you to easily extract properties from an object and assign those properties to variables.
 
 const profile ={
     name: 'Sagar',
@@ -58,3 +81,29 @@ function introduce({name}){
 }
 
 introduce(Profile); // My name is Sagar
+
+// Object Destructuring 
+
+const object = {
+    name: 'WEB3',
+    youtube: 'Daooa',
+    // languages: 'Solidity'
+    languages: {
+        first: "Solidity",
+        second: 'css',
+    }
+}
+
+// const {name: username, youtube, languages = 'css', age = 30,} = object;
+const {
+    name: username, 
+    youtube, 
+    languages: {
+    first,
+    second: secondVariable,
+    third = 'Java',
+    }
+}= object;
+
+// console.log(username, youtube, language, age);
+console.log(username, youtube, first, secondVariable, third);
