@@ -3,7 +3,6 @@
 [click](https://www.google.com)
 
 # Solution Code
-
 ## Project 1 Background ColorChanger
 
 ```javascript
@@ -89,8 +88,7 @@ setInterval(function(){
 
 
 ## Project 4 Guess The Number
-
-```Javascript
+```
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
