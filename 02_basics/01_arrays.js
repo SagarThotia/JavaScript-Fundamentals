@@ -16,13 +16,44 @@
     
     A shallow copy of an object is a copy whose properties share the same references
     (point to the same underlying values) as those of the source object from which the 
-    copy was made.
-    
+    copy was made.As a result, when you change either the source or the copy, you may 
+    also cause the other object to change too.
+
+                                  or 
+
+    A Shallow Copy creates a new object, but it does not create copies of the objects 
+    that the original object references. Instead, it only copies the references to 
+    those objects. This means that the new object and the original object share the 
+    same referenced objects. If a referenced object is modified, the changes will be 
+    reflected in both the original and the shallow copy.                              
+
+        More formally, two objects o1 and o2 are shallow copies if:
+
+        1. They are not the same object (o1 !== o2).
+        2. The properties of o1 and o2 have the same names in the same order.
+        3. The values of their properties are equal.
+        4. Their prototype chains are equal.
+        
+        
     2. Deep copy: 
     
     A deep copy of an object is a copy whose properties do not share the same references
     (point to the same underlying values) as those of the source object from which the 
-    copy was made.
+    copy was made.  As a result, when you change either the source or the copy, you can be 
+    assured you're not causing the other object to change too.
+
+                                           or
+
+    A Deep Copy creates a new object and also recursively copies all objects that are referenced
+    by the original object. This means that the new object is completely independent of the original
+    object. Changes to the new object will not affect the original object and vice versa.
+                                           
+       Two objects o1 and o2 are structurally equivalent if their observed behaviors are the same. These behaviors include:
+
+       1. The properties of o1 and o2 have the same names in the same order.
+       2. The values of their properties are structurally equivalent.
+       3. Their prototype chains are structurally equivalent (although when we deal with structural equivalence, these 
+          objects are usually plain objects, meaning they both inherit from Object.prototype).
     
 */
 
